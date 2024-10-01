@@ -73,5 +73,7 @@ crashlytics-build.properties
 
 
 /DataFiles
-/AcquiredData
-
+/AcquiredDataw
+code/__pycache__
+.vscode
+.txt
