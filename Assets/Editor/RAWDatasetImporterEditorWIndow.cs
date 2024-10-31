@@ -12,9 +12,9 @@ namespace UnityVolumeRendering
     {
         private string fileToImport;
 
-        private int dimX;
-        private int dimY;
-        private int dimZ;
+        private int dimX  = 249;
+        private int dimY = 199;
+        private int dimZ = 160;
         private int bytesToSkip = 0;
         private DataContentFormat dataFormat = DataContentFormat.Int16;
         private Endianness endianness = Endianness.LittleEndian;
@@ -23,13 +23,14 @@ namespace UnityVolumeRendering
         {
             fileToImport = filePath;
 
-            if (Path.GetExtension(fileToImport) == ".ini")
-                fileToImport = fileToImport.Replace(".ini", ".raw");
+            // if (Path.GetExtension(fileToImport) == ".ini")
+            //     fileToImport = fileToImport.Replace(".ini", ".raw");
 
             // Try parse ini file (if available)
             DatasetIniData initData = DatasetIniReader.ParseIniFile(fileToImport + ".ini");
             if (initData != null)
             {
+                Debug.Log("nii" + fileToImport);
                 dimX = initData.dimX;
                 dimY = initData.dimY;
                 dimZ = initData.dimZ;

@@ -59,6 +59,7 @@ namespace UnityVolumeRendering
                 datasetType = DatasetType.Unknown;
             }
 
+            //Debug.log("type "+ datasetType);
             return datasetType;
         }
     }

@@ -68,8 +68,10 @@ namespace UnityVolumeRendering
                             imgFileFormat = ImageFileFormat.VASP;
                         else if (datasetType == DatasetType.NRRD)
                             imgFileFormat = ImageFileFormat.NRRD;
-                        else if (datasetType == DatasetType.NIFTI)
+                        else if (datasetType == DatasetType.NIFTI){
+                            Debug.Log("niftii");
                             imgFileFormat = ImageFileFormat.NIFTI;
+                            }
                         else
                             throw new NotImplementedException();
 

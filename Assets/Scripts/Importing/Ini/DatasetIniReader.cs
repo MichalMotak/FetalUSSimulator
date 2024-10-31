@@ -35,6 +35,8 @@ namespace UnityVolumeRendering
 
             DatasetIniData iniData = new DatasetIniData();
 
+            //Debug.Log("Nii reader");
+
             foreach (string line in lines)
             {
                 string[] parts = line.Trim(' ').Split(':');

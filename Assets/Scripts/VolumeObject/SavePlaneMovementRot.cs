@@ -153,7 +153,7 @@ namespace UnityVolumeRendering
 			    		transform.localPosition = temppos;
 
 			    		Vector3 temprot = new Vector3(idx_x, idx_y, idx_z);
-	    				transform.localRotation = Quaternion.Euler(temprot);
+	    				transform.localRotation = Quaternion.Euler(temprot); // quaterions output
 
 		    			// string img_name = "plane" + (screenshotIndex+1) + ".png";
 

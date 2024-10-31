@@ -49,6 +49,7 @@ namespace UnityVolumeRendering
             Dictionary<string, VectorString> directorySeries = new Dictionary<string, VectorString>();
             foreach (string directory in directories)
             {
+                Debu.Log("d "+ directory);
                 VectorString seriesIDs = ImageSeriesReader.GetGDCMSeriesIDs(directory);
                 directorySeries.Add(directory, seriesIDs);
 
